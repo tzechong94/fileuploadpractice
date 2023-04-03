@@ -1,0 +1,9 @@
+<form [formGroup]="form" (submit)="upload()">
+
+    Image:
+    <input type="file" formControlName="image-file" accept="image/*" #file>
+
+    <button type="submit">POST</button>
+</form>
+
+<img [src]="imageData">
